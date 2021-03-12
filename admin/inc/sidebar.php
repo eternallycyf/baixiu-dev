@@ -19,6 +19,7 @@ $current_user = xiu_get_current_user();
     </li>
     <?php $menu_posts = array('posts', 'post-add', 'categories'); ?>
     <li<?php echo in_array($current_page, $menu_posts) ? ' class="active"' : '' ?>>
+      <a href="#menu-posts"<?php echo in_array($current_page, $menu_posts) ? '' : ' class="collapsed"' ?> data-toggle="collapse">
         <i class="fa fa-thumb-tack"></i>文章<i class="fa fa-angle-right"></i>
       </a>
       <ul id="menu-posts" class="collapse<?php echo in_array($current_page, $menu_posts) ? ' in' : '' ?>">
